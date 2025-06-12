@@ -9,6 +9,15 @@
 	"id": "frenchfrysays.lucas_and_caleb_mod_collab_mod",
 	"name": "Lucas and Caleb mod Collab mod",
 	"version": "v1.0.0",
-	"developer": "frenchfrysays",
-	"description": "A Mod that Caleb and I made"
+	"developers": [
+		"frenchfrysays",
+		"lilfrysays"
+	],
+	"description": "A Mod that Caleb and I made",
+	"dependencies": {
+		"geode.node-ids": {
+			"version": "1.20",
+			"importance": "required"
+		}
+	}
 }
