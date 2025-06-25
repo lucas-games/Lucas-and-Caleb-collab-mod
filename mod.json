@@ -16,8 +16,13 @@
 	"description": "A Mod that Caleb and I made",
 	"dependencies": {
 		"geode.node-ids": {
-			"version": "1.20",
+			"version": "1.20.0",
 			"importance": "required"
 		}
+	},
+	"resources": {
+		"files": [
+			"resources/lucas/sound/geometry-dash.mp3"
+		]
 	}
 }
