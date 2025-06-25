@@ -24,7 +24,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 
 		menu->updateLayout();
 
-		FMODAudioEngine::sharedEngine()->playEffect("geometry-dash.mp3"_spr)
+		FMODAudioEngine::sharedEngine()->playEffect("geometry-dash.mp3"_spr);
 
 		return true;
 	}
