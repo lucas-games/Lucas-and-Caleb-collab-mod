@@ -14,9 +14,6 @@ class $modify(MyMenuLayer, MenuLayer) {
 		auto myButton = CCMenuItemSpriteExtra::create(
 			CCSprite::createWithSpriteFrameName("GJ_likeBtn_001.png"),
 			this,
-			/**
-			 * Here we use the name we set earlier for our modify class.
-			*/
 			menu_selector(MyMenuLayer::onMyButton)
 		);
 
@@ -26,6 +23,8 @@ class $modify(MyMenuLayer, MenuLayer) {
 		myButton->setID("my-button"_spr);
 
 		menu->updateLayout();
+
+		FMODAudioEngine::sharedEngine()->playEffect("geometry-dash.mp3"_spr)
 
 		return true;
 	}
