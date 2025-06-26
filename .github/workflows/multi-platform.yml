@@ -14,6 +14,7 @@ jobs:
         config:
         - name: Windows
           os: windows-latest
+          
 
         - name: macOS
           os: macos-latest
@@ -41,10 +42,11 @@ jobs:
         with:
           combine: true
           target: ${{ matrix.config.target }}
+          runs-on: lucasbeast
 
   package:
     name: Package builds
-    runs-on: ubuntu-latest
+    runs-on: linux-latest
     needs: ['build']
 
     steps:
