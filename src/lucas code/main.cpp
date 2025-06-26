@@ -44,10 +44,18 @@ class $modify(MyMenuLayer, MenuLayer) {
 			} else {
 				if (sound == 3) {
 					FMODAudioEngine::sharedEngine()->playEffect("keyboard-typing-sound.mp3"_spr);
+				} else {
+					if (sound == 4) {
+						FMODAudioEngine::sharedEngine()->playEffect("vine-boom.mp3"_spr);
+					}
 				}
 			}
 		}
 
 		sound = sound + 1;
+
+		if (sound >= 5) {
+			sound = 1;
+		}
 	}
 };
