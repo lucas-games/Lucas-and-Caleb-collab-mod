@@ -8,12 +8,14 @@ on:
 
 jobs:
   build:
+  runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
         config:
         - name: Windows
           os: windows-latest
+          
 
         - name: macOS
           os: macos-latest
@@ -35,6 +37,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        runs-on: self-hosted
 
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
@@ -44,7 +47,7 @@ jobs:
 
   package:
     name: Package builds
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: ['build']
 
     steps:
