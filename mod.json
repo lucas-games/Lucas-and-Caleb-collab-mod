@@ -22,7 +22,8 @@
 	},
 	"resources": {
 		"files": [
-			"resources/lucas/sound/geometry-dash.mp3"
+			"resources/lucas/sound/geometry-dash.mp3",
+			"resources/lucas/sound/keyboard-typing-sound.mp3"
 		]
 	}
 }

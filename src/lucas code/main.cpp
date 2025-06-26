@@ -24,16 +24,30 @@ class $modify(MyMenuLayer, MenuLayer) {
 
 		menu->updateLayout();
 
-		FMODAudioEngine::sharedEngine()->playEffect("geometry-dash.mp3"_spr);
-
 		return true;
 	}
 
 	void onMyButton(CCObject*) {
 		FLAlertLayer::create(
 			"Geode",
-			"Hello from my custom mod!",
-			"OK"
+			"I have played a sound",
+			"OK", "Cool"
 		)->show();
+
+		int sound = 1;
+
+		if (sound == 1) {
+			FMODAudioEngine::sharedEngine()->playEffect("geometry-Dash.mp3"_spr);
+		} else {
+			if (sound == 2) {
+				FMODAudioEngine::sharedEngine()->playEffect("magicExplosion.ogg"_spr);
+			} else {
+				if (sound == 3) {
+					FMODAudioEngine::sharedEngine()->playEffect("")
+				}
+			}
+		}
+
+		sound = sound + 1;
 	}
 };
