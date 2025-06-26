@@ -26,5 +26,8 @@
 			"resources/lucas/sound/keyboard-typing-sound.mp3",
 			"resources/lucas/sound/vine-boom.mp3"
 		]
+	},
+	"links": {
+		"source": "https://github.com/lucas-games/lucas-and-caleb-collab-mod/"
 	}
 }
