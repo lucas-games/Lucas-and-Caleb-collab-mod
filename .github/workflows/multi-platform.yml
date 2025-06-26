@@ -45,7 +45,7 @@ jobs:
 
   package:
     name: Package builds
-    runs-on: self-hosted
+    runs-on: linux-latest
     needs: ['build']
 
     steps:
