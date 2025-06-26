@@ -36,7 +36,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        runs-on: self-hosted
 
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
