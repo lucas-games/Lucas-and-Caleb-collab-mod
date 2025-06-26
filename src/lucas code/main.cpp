@@ -34,27 +34,21 @@ class $modify(MyMenuLayer, MenuLayer) {
 			"OK"
 		)->show();
 
-		int sound = 1;
+		static int sound = 0;
 
-		if (sound == 1) {
-			FMODAudioEngine::sharedEngine()->playEffect("geometry-Dash.mp3"_spr);
-		} else {
-			if (sound == 2) {
-				FMODAudioEngine::sharedEngine()->playEffect("magicExplosion.ogg"_spr);
-			} else {
-				if (sound == 3) {
-					FMODAudioEngine::sharedEngine()->playEffect("keyboard-typing-sound.mp3"_spr);
-				} else {
-					if (sound == 4) {
-						FMODAudioEngine::sharedEngine()->playEffect("vine-boom.mp3"_spr);
-					}
-				}
-			}
+		if (sound == 0) {
+			FMODAudioEngine::sharedEngine()->playEffect("geometry-dash.mp3"_spr);
+		} else if (sound == 1) {
+			FMODAudioEngine::sharedEngine()->playEffect("magicExplosion.ogg"_spr);
+		} else if (sound == 2) {
+			FMODAudioEngine::sharedEngine()->playEffect("keyboard-typing-sound.mp3"_spr);
+		} else if (sound == 3) {
+			FMODAudioEngine::sharedEngine()->playEffect("vine-boom.mp3"_spr);
 		}
 
 		sound = sound + 1;
 
-		if (sound >= 5) {
+		if (sound >= 4) {
 			sound = 1;
 		}
 	}
