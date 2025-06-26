@@ -31,7 +31,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 		FLAlertLayer::create(
 			"Geode",
 			"I have played a sound",
-			"OK", "Cool"
+			"OK"
 		)->show();
 
 		int sound = 1;
