@@ -43,7 +43,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 				FMODAudioEngine::sharedEngine()->playEffect("magicExplosion.ogg"_spr);
 			} else {
 				if (sound == 3) {
-					FMODAudioEngine::sharedEngine()->playEffect("")
+					FMODAudioEngine::sharedEngine()->playEffect("keyboard-typing-sound.mp3"_spr);
 				}
 			}
 		}
