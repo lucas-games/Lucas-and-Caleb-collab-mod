@@ -42,7 +42,6 @@ jobs:
         with:
           combine: true
           target: ${{ matrix.config.target }}
-          runs-on: lucasbeast
 
   package:
     name: Package builds
